@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8" />
+        <title>css</title>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='front_master.css') }}">
+    </head>
+    <body>
+        <div class="box" id="nav">
+            <div class="icon">
+                <img width="80px",height="70px" src="https://i.postimg.cc/L5H2zFj5/icon.jpg" alt="image"/>
+            </div>
+            <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn" style="transform:translateY(-50px) translateX(700px)">
+                    Dropdown 1 &gt;
+                </button>
+                <div id="myDropdown" class="dropdown-content" style="transform:translateY(-50px) translateX(700px)">
+                    <a href="#" class="list_design">option 1</a>
+                    <a href="#" class="list_design">option 2</a>
+                    <a href="#" class="list_design">option 3</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn" style="transform:translateY(-50px) translateX(815px)">
+                    Dropdown 2 &gt;
+                </button>
+                <div id="myDropdown" class="dropdown-content" style="transform: translateY(-50px)translateX(800px)">
+                    <a href="#" class="list_design">option 1</a>
+                    <a href="#" class="list_design">option 2</a>
+                    <a href="#" class="list_design">option 3</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn" style="transform:translateY(-50px) translateX(935px)">
+                    Dropdown 3 &gt;
+                </button>
+                <div id="myDropdown" class="dropdown-content" style="transform:translateY(-50px) translateX(910px)">
+                    <!-- <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">-->
+                    <a href="#" class="list_design">option 1</a>
+                    <a href="#" class="list_design">option 2</a>
+                    <a href="#" class="list_design">option 3</a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <button
+                    onclick="myFunction()"
+                    class="dropbtn"
+                    style="transform: translateY(-50px) translateX(1050px)"
+                >
+                    Dropdown 4 &gt;
+                </button>
+                <div id="myDropdown" class="dropdown-content" style="transform: translateY(-50px) translateX(1020px)">
+                    <!-- <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">-->
+                    <a href="#" class="list_design">option 1</a>
+                    <a href="#" class="list_design">option 2</a>
+                    <a href="#" class="list_design">option 3</a>
+
+                    <!--  <a href="#contact">Contact</a>
+      <a href="#custom">Custom</a>
+      <a href="#support">Support</a>-->
+                </div>
+            </div>
+        </div>
+        <div class="bodybox">
+            <div class="box1">
+                <p class="body_div">&nbsp;ABCD</p>
+            </div>
+            <br /><br /><br /><br />
+
+            <div class="box1">
+                <p class="body_div">&nbsp;EFGH</p>
+            </div>
+            <br /><br /><br /><br />
+
+            <div class="box1">
+                <p class="body_div">&nbsp;IJKL</p>
+            </div>
+            <br /><br /><br /><br />
+
+            <div class="box1">
+                <p class="body_div">&nbsp;MNOP</p>
+            </div>
+
+        </div><br><br><br><br><br><br><br><br>
+        <div class="bodybox1">
+          <p class="body_div1">&emsp;&emsp;&emsp;&emsp;<u>Contact Us:</u></p>
+        </div>
+        <div class="container">
+            <div class="chatbox">
+                <div class="chatbox__support">
+                    <div class="chatbox__header">
+                        <div class="chatbox__image--header">
+                            <img src="https://i.postimg.cc/L5H2zFj5/icon.jpg" alt="image">
+                        </div>
+                        <div class="chatbox__content--header">
+                            <h4 class="chatbox__heading--header">Chat support</h4>
+                            <p class="chatbox__description--header">Hi! How can I help you?</p>
+                        </div>
+                    </div>
+                    <div class="chatbox__messages">
+                        <div></div>
+                    </div>
+                    <div class="chatbox__footer">
+                        <input type="text" placeholder="Write a message..." class="writingbox">
+                        <button class="chatbox__send--footer send__button">Send</button>
+                    </div>
+                </div>
+                <div class="chatbox__button">
+                    <button><img src="https://www.svgrepo.com/show/87374/message.svg" /></button>
+                </div>
+            </div>
+        </div>
+        <script src="{{ url_for('static', filename='myscripts.js')}}"></script>
+    </body>
+</html>
